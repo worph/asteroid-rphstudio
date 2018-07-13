@@ -1,0 +1,35 @@
+{
+  "name": "rphstudio-asteroid",
+  "version": "1.2.1",
+  "description": "rphstudio-asteroid",
+  "keywords": ["rphstudio"],
+  "devDependencies": {
+    "expose-loader": "0.7.5",
+    "ts-loader": "4.4.2",
+    "typescript": "2.9.2",
+    "webpack": "4.15.0",
+    "webpack-cli": "3.0.8",
+    "webpack-dev-server": "3.1.4"
+  },
+  "dependencies": {
+    "phaser": "3.10.1"
+  },
+  "scripts": {
+    "dev": "webpack --mode development && webpack-dev-server --mode development",
+    "prod": "webpack --mode production && webpack-dev-server --mode production",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitsensitive/phaser3-typescript.git"
+  },
+  "author": {
+    "name": "digitsensitive",
+    "email": "digit.sensitivee@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitsensitive/phaser3-typescript/issues"
+  },
+  "homepage": "https://github.com/digitsensitive/phaser3-typescript#readme"
+}
