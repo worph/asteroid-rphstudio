@@ -2,7 +2,9 @@
   "name": "rphstudio-asteroid",
   "version": "1.2.1",
   "description": "rphstudio-asteroid",
-  "keywords": ["rphstudio"],
+  "keywords": [
+    "rphstudio"
+  ],
   "devDependencies": {
     "expose-loader": "0.7.5",
     "ts-loader": "4.4.2",
