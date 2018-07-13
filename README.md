@@ -30,5 +30,5 @@ Note: you can also install traefik and a docker registry to have the full config
 ### live example
 http://asteroid.game.rphstudio.net/
 
-###Code edition
+### Code edition
 You can use https://code.visualstudio.com/ to have typescript code coloration and code completion
