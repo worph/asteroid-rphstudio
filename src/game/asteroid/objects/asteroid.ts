@@ -36,9 +36,9 @@ export class Asteroid extends Phaser.GameObjects.Graphics {
 
     // physics
     this.currentScene.physics.world.enable(this);
-    this.body.allowGravity = false;
-    this.body.setCircle(this.asteroidRadius);
-    this.body.setOffset(-this.asteroidRadius, -this.asteroidRadius);
+    this.getBody().allowGravity = false;
+    this.getBody().setCircle(this.asteroidRadius);
+    this.getBody().setOffset(-this.asteroidRadius, -this.asteroidRadius);
 
     this.currentScene.add.existing(this);
   }

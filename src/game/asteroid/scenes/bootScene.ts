@@ -1,18 +1,13 @@
-/**
- * @author       Digitsensitive <digit.sensitivee@gmail.com>
- * @copyright    2018 Digitsensitive
- * @description  Asteroid: Boot Scene
- * @license      Digitsensitive
- */
+import "phaser";
 
 export class BootScene extends Phaser.Scene {
-  constructor() {
-    super({
-      key: "BootScene"
-    });
-  }
+    constructor() {
+        super({
+            key: "BootScene"
+        });
+    }
 
-  update(): void {
-    this.scene.start("MainMenuScene");
-  }
+    update(): void {
+        this.scene.start("GameScene");
+    }
 }

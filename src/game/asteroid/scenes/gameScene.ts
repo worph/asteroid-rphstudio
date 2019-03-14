@@ -1,12 +1,5 @@
-/**
- * @author       Digitsensitive <digit.sensitivee@gmail.com>
- * @copyright    2018 Digitsensitive
- * @description  Asteroid: Game Scene
- * @license      Digitsensitive
- */
 
 import { Asteroid } from "../objects/asteroid";
-import { Bullet } from "../objects/bullet";
 import { Ship } from "../objects/ship";
 import { CONST } from "../const/const";
 
@@ -14,7 +7,7 @@ export class GameScene extends Phaser.Scene {
   private player: Ship;
   private asteroids: Asteroid[];
   private numberOfAsteroids: number;
-  private score: number;
+  private score: number=0;
   private bitmapTexts: Phaser.GameObjects.BitmapText[];
   private gotHit: boolean;
 
@@ -23,6 +16,14 @@ export class GameScene extends Phaser.Scene {
       key: "GameScene"
     });
   }
+
+    preload(): void {
+        this.load.bitmapFont(
+            "asteroidFont",
+            window.location.protocol+"//"+window.location.host+"/assets/games/asteroid/asteroidFont.png",
+            window.location.protocol+"//"+window.location.host+"/assets/games/asteroid/asteroidFont.fnt"
+        );
+    }
 
   create(): void {
     this.player = new Ship({ scene: this, opt: {} });

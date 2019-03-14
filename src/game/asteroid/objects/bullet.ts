@@ -44,9 +44,9 @@ export class Bullet extends Phaser.GameObjects.Graphics {
 
     // physics
     this.currentScene.physics.world.enable(this);
-    this.body.allowGravity = false;
-    this.body.setCircle(3);
-    this.body.setOffset(-3, -3);
+    this.getBody().allowGravity = false;
+    this.getBody().setCircle(3);
+    this.getBody().setOffset(-3, -3);
     this.currentScene.add.existing(this);
   }
 

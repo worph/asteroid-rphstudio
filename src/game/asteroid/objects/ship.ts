@@ -1,12 +1,6 @@
-/**
- * @author       Digitsensitive <digit.sensitivee@gmail.com>
- * @copyright    2018 Digitsensitive
- * @description  Asteroid: Ship
- * @license      Digitsensitive
- */
-
 import { Bullet } from "../objects/bullet";
 import { CONST } from "../const/const";
+import "phaser";
 
 export class Ship extends Phaser.GameObjects.Graphics {
   private currentScene: Phaser.Scene;
@@ -43,9 +37,9 @@ export class Ship extends Phaser.GameObjects.Graphics {
 
     // physics
     this.currentScene.physics.world.enable(this);
-    this.body.allowGravity = false;
-    this.body.setSize(CONST.SHIP_SIZE * 2, CONST.SHIP_SIZE * 2);
-    this.body.setOffset(-CONST.SHIP_SIZE, -CONST.SHIP_SIZE);
+    this.getBody().allowGravity = false;
+    this.getBody().setSize(CONST.SHIP_SIZE * 2, CONST.SHIP_SIZE * 2);
+    this.getBody().setOffset(-CONST.SHIP_SIZE, -CONST.SHIP_SIZE);
 
     this.currentScene.add.existing(this);
   }
