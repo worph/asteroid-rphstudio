@@ -1,0 +1,7 @@
+{
+  "name": "rph-asteroid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
