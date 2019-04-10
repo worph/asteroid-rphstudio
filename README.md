@@ -1,3 +1,7 @@
+This project is a Phaser + React + Typescript boiler plate that alows to generate static files for web deployement (with docker). And executable game with installer (with electron)
+
+In the future this boiler plate wil also generate android game by using ionic as a wrapper.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

@@ -5,3 +5,4 @@
 /electron/src/**
 /electron/out/**
 /electron/node_modules/**
+/docker/www/**
