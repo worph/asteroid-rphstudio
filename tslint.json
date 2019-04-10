@@ -6,7 +6,8 @@
       "node_modules/**/*.ts",
       "src/**/*.tsx",
       "src/**/*.ts",
-      "src/**/*.js"
+      "src/**/*.js",
+      "electron/**"
     ]
   }
 }

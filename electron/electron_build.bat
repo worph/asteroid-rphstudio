@@ -14,5 +14,5 @@ xcopy /s .\build .\electron\src\
 cd electron
 
 rem RUN electron
-yarn install
-yarn make
+call yarn install
+call yarn make

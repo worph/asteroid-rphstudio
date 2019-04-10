@@ -32,7 +32,7 @@ const createWindow = () => {
     mainWindow.loadURL('http://127.0.0.1:8085/');
 
     // Open the DevTools.
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

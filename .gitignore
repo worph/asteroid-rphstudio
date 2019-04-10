@@ -2,3 +2,6 @@
 /node_modules
 /package-lock.json
 /build
+/electron/src/**
+/electron/out/**
+/electron/node_modules/**
