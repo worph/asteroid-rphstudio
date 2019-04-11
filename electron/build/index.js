@@ -25,11 +25,10 @@ const createWindow = () => {
     //listen to incoming connexion
     httpServer.listen(8085,'127.0.0.1', () => {
         console.log(`Listening on ${httpServer.address().port}`);
+		// and load the index.html of the app.
+		//mainWindow.loadURL(`file://${__dirname}/index.html`);
+		mainWindow.loadURL('http://127.0.0.1:8085/');
     });
-
-    // and load the index.html of the app.
-    //mainWindow.loadURL(`file://${__dirname}/index.html`);
-    mainWindow.loadURL('http://127.0.0.1:8085/');
 
     // Open the DevTools.
     //mainWindow.webContents.openDevTools();
