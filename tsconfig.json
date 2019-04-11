@@ -26,6 +26,8 @@
     "acceptance-tests",
     "webpack",
     "jest",
+    "electron",
+    "ionic",
     "src/setupTests.ts"
   ]
 }
